@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Miguel Cecilio de Abreu Ruiz] | Advocacia e Consultoria Jurídica</title>
+    <style>
+        :root {
+            --primary: #1a2530;
+            --accent: #b8860b;
+            --bg-light: #f8f9fa;
+            --text: #333333;
+            --white: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: var(--accent);
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .hero {
+            background: linear-gradient(rgba(26, 37, 48, 0.9), rgba(26, 37, 48, 0.9)), url('https://unsplash.com') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 5%;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #e0e0e0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 0.85rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        section {
+            padding: 4.5rem 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            margin: 0.5rem auto 0;
+        }
+        .sobre-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .oab-badge {
+            display: inline-block;
+            background: var(--bg-light);
+            border: 1px solid #ddd;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .areas-bg {
+            background-color: var(--bg-light);
+            max-width: 100%;
+        }
+        .areas-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--accent);
+        }
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+        .contato-box {
+            text-align: center;
+            background: var(--primary);
+            color: var(--white);
+            padding: 3.5rem 2rem;
+            border-radius: 8px;
+        }
+        .contato-box h2 {
+            color: var(--white);
+        }
+        .contato-info {
+            margin: 1.5rem 0 2rem;
+            font-size: 1.1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 5%;
+            background: #111820;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            nav { display: none; }
+            .hero h1 { font-size: 1.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DR. <span>[SEU SOBRENOME]</span></div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#areas">Áreas de Atuação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>[Seu Nome Completo]</h1>
+        <p>Atuação jurídica estratégica, ética e personalizada para a defesa dos seus direitos.</p>
+        <a href="https://wa.me[DDD][SeuNumero]" target="_blank" class="btn">Agendar Consulta</a>
+    </div>
+
+    <section id="sobre">
+        <h2>Sobre o Advogado</h2>
+        <div class="sobre-grid">
+            <div>
+                <span class="oab-badge">OAB/[SP] [numero da oab: 11155554]</span>
+                <p>Graduado em Direito pela [Nome da Faculdade], com especialização em [Sua Especialização]. Atuo de forma consultiva e contenciosa, prezando pela transparência, agilidade e atendimento direto ao cliente em todas as etapas do processo.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="areas-bg">
+        <section id="areas">
+            <h2>Áreas de Atuação</h2>
+            <div class="areas-container">
+                <div class="card">
+                    <h3>Direito Civil</h3>
+                    <p>Elaboração e revisão de contratos, responsabilidade civil, indenizações, cobranças e resolução de conflitos patrimoniais.</p>
+                </div>
+                <div class="card">
+                    <h3>Direito Trabalhista</h3>
+                    <p>Assessoria preventiva para empresas e defesa de direitos trabalhistas, rescisões, verbas e ações judiciais.</p>
+                </div>
+                <div class="card">
+                    <h3>Direito de Família</h3>
+                    <p>Divórcios judiciais e extrajudiciais, guarda, pensão alimentícia, inventários e planejamento sucessório.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="contato">
+        <div class="contato-box">
+            <h2>Entre em Contato</h2>
+            <p>Atendimento presencial em [Sua Cidade/Estado] e online para todo o Brasil.</p>
+            <div class="contato-info">
+                <p><strong>WhatsApp / Telefone:</strong> ([DDD]) [Seu Telefone]</p>
+                <p><strong>E-mail:</strong> [seuemail@exemplo.com]</p>
+                <p><strong>Endereço:</strong> [Rua, Número, Bairro - Cidade/UF]</p>
+            </div>
+            <a href="https://wa.me[DDD][SeuNumero]" target="_blank" class="btn">Falar pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [Seu Nome Completo] - Advogado | OAB/[UF] [Número]. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
